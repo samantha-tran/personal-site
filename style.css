@@ -154,17 +154,7 @@ img {
 
 /* LANDING PAGE */
 
-.github-icon svg {
-    width: calc(30px + 3vw);
-    margin: 20px;
-}
-
-.linkedin-icon svg {
-    width: calc(30px + 3vw);
-    margin: 20px;
-}
-
-.envelope-icon svg {
+.landing-icons svg {
     width: calc(30px + 3vw);
     margin: 20px;
 }
@@ -195,18 +185,47 @@ img {
     fill: rgb(99, 99, 99);
 }
 
-/* ABOUT PAGE */
+@media (max-width: 700px) {
+    .landing-page .grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 0px;
+    }
+
+    .landing-page .img-container {
+        width: 70%;
+        height: auto;
+    }
+}
+
+/* ABOUT */
 
 .about .container {
     grid-template-columns: 2fr 3fr;
 }
 
-.about ul {
-    list-style-type: disc;
+.about-text {
     padding: 20px;
 }
 
+.about {
+    margin-bottom: 15vh;
+}
+
+.about ul {
+    list-style-type: disc;
+    padding: 20px;
+    font-size: calc(15px + 0.2vw)
+}
+
+.about p {
+    max-width: 50vw;
+}
+
 /* PROJECTS */
+.projects {
+    margin-bottom: 15vh;
+}
 .projects .flex {
     flex-wrap: wrap;
     justify-content: center;
@@ -216,7 +235,7 @@ img {
     position: relative;
     justify-content: center;
     flex-direction: column;
-    width: 300px;
+    width: 400px;
     height: auto;
     border-radius: 4px;
     text-align: center;
@@ -260,4 +279,38 @@ img {
 
 .projects h2 {
     text-align: center;
+}
+
+/* CONTACTS */
+
+.contacts h2 {
+    text-align: center;
+}
+.contact-container svg {
+    width: calc(10px + 2vw);
+    margin: 20px;
+}
+
+.contact-container {
+    padding: 20px 6vw;
+    flex-wrap: wrap;
+}
+
+.contacts a {
+    font-size: calc(15px + 0.2vw);
+    color: black;
+}
+
+.contacts p {
+    font-size: calc(15px + 0.2vw);
+}
+
+.flex .single-contact {
+    flex-wrap: nowrap;
+}
+
+@media (max-width: 900px) {
+    .contact-container {
+        flex-direction: column;
+    }
 }
