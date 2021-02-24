@@ -190,3 +190,7 @@ img {
 .landing-icons {
     justify-content: center;
 }
+
+.landing-icons a:hover {
+    fill: rgb(99, 99, 99);
+}
