@@ -14,21 +14,23 @@
 
 <body>
     <!--Navigation Bar-->
-    <div class="navbar container flex">
-        <div class="logo">Samantha Tran</div>
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-        <nav class="navbar-links">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#" target="_blank">Resume</a></li>
-            </ul>
-        </nav>
+    <div class="navbar container">
+        <div class="flex">
+            <div class="logo">Samantha Tran</div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <nav class="navbar-links">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" target="_blank">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
     <section class="container landing-page">
         <div class="grid">
@@ -79,8 +81,9 @@
             </div>
         </div>
     </section>
-    <section class="about" id="about">
-        <div class="container grid">
+    <div id="about" class="anchor"></div>
+    <section class="container about">
+        <div class="grid">
             <div class="img-container">
                 <img src="images/flowers.png" alt="purple and yellow flowers">
             </div>
@@ -110,6 +113,7 @@
             </div>
         </div>
     </section>
+    <div id="projects" class="anchor"></div>
     <section class="container projects">
         <h2>Projects</h2>
         <div class="flex">
@@ -142,7 +146,8 @@
             </div>
         </div>
     </section>
-    <section class="container contacts">
+    <div id="contact" class="anchor"></div>
+    <section class="container contacts" id="contacts">
         <h2>Contact Me!</h2>
         <div class="flex contact-container">
             <div class="flex single-contact">

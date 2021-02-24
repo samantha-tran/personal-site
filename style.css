@@ -200,16 +200,12 @@ img {
 
 /* ABOUT */
 
-.about .container {
+.about .grid {
     grid-template-columns: 2fr 3fr;
 }
 
 .about-text {
     padding: 20px;
-}
-
-.about {
-    margin-bottom: 15vh;
 }
 
 .about ul {
@@ -223,9 +219,7 @@ img {
 }
 
 /* PROJECTS */
-.projects {
-    margin-bottom: 15vh;
-}
+
 .projects .flex {
     flex-wrap: wrap;
     justify-content: center;
@@ -313,4 +307,12 @@ img {
     .contact-container {
         flex-direction: column;
     }
+}
+
+/* ANCHORS */
+
+.anchor {
+    width: 100%;
+    position: relative;
+    height: 20vh;
 }
