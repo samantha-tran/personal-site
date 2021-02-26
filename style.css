@@ -343,6 +343,11 @@ img {
     flex-wrap: nowrap;
 }
 
+.single-contact svg {
+    max-height: 30px;
+    max-width: 30px;
+}
+
 @media (max-width: 900px) {
     .contact-container {
         flex-direction: column;
