@@ -18,10 +18,17 @@ a:hover {
 
 p {
     margin: 10px 0;
+    font-weight: 300;
+    text-align: center;
 }
 
 img {
     width: 100%;
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
 }
 
 .container {
@@ -151,60 +158,18 @@ section {
 
 
 @media (max-width: 360px) {
-    .about-text p {
-        max-width: 100%;
-    }
-
-    .about h2 {
-        text-align: center;
-    }
-
     .about-text {
-        margin: 30px;
+        padding: 30px;
     }
 }
 
 /* PROJECTS */
-.projects h2 {
+.projects h3 {
     text-align: center;
+    margin-bottom: 300px;
 }
 
-/* CONTACTS */
-
-.contacts h2 {
-    text-align: center;
-}
-.contact-container svg {
-    width: calc(10px + 2em);
-    margin: 20px;
-}
-
-.contact-container {
-    padding: 20px 6vw;
-    flex-wrap: wrap;
-}
-
-.contacts a {
-    font-size: calc(15px + 0.2vw);
-    color: black;
-}
-
+/* CONTACT */
 .contacts p {
-    font-size: calc(15px + 0.2vw);
-}
-
-.flex .single-contact {
-    flex-wrap: nowrap;
-}
-
-.single-contact svg {
-    max-height: 30px;
-    max-width: 30px;
-}
-
-@media (max-width: 900px) {
-    .contact-container {
-        flex-direction: column;
-
-    }
+    margin-bottom: 300px;
 }
