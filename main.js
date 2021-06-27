@@ -1,5 +1,4 @@
-
-/* NAVIGATION BAR */
+/* 
 
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
 const navbar = document.getElementsByClassName('navbar-links')[0];
@@ -15,9 +14,10 @@ for (const links of navLinks) {
     })
 }
 
-/* SMOOTH SCROLLING */
 
 const links = document.querySelectorAll(".navbar ul a");
+const logo = document.querySelector(".navbar .logo");
+logo.addEventListener("click", clickHandler);
 for (const link of links) {
   link.addEventListener("click", clickHandler);
 }
@@ -33,3 +33,4 @@ function clickHandler(e) {
         });
     }
 }
+ */
