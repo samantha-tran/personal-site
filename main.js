@@ -1,36 +1,23 @@
-/* 
+var slideIndex = 1;
+showSlides(slideIndex);
 
-const toggleButton = document.getElementsByClassName('toggle-button')[0];
-const navbar = document.getElementsByClassName('navbar-links')[0];
-const navLinks = document.getElementsByClassName('menu-link');
-
-toggleButton.addEventListener('click', () => {
-    navbar.classList.toggle('active');
-})
-
-for (const links of navLinks) {
-    links.addEventListener('click', () => {
-        navbar.classList.remove('active');    
-    })
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-const links = document.querySelectorAll(".navbar ul a");
-const logo = document.querySelector(".navbar .logo");
-logo.addEventListener("click", clickHandler);
-for (const link of links) {
-  link.addEventListener("click", clickHandler);
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slide");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
 }
- 
-function clickHandler(e) {
-    if (this.classList.contains("menu-link")) {
-        e.preventDefault();
-        const href = this.getAttribute("href");
-        const offsetTop = document.querySelector(href).offsetTop;
-        scroll({
-            top: offsetTop,
-            behavior: "smooth"
-        });
-    }
-}
- */
